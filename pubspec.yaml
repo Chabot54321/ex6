@@ -1,0 +1,8 @@
+name: ex6
+version: 0.0.1
+author: Thomas Chabot
+description: A sample web application
+dependencies:
+  browser: any
+  dartlero:
+    git: git://github.com/dzenanr/dartlero.git
