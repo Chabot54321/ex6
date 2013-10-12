@@ -1,0 +1,5 @@
+Il est maintenant possible d'ajouter des contacts avec les propriétés dans la mémoire locale.
+
+1- Créer un interface pour afficher les données en mémoire
+2- Voir si on peut faire un outils de recherche dans les contacts (pour le fun)
+
