@@ -13,4 +13,6 @@ les packages dans GitHub. Je dois m'y prendre de la mauvaise manière. J'ai tent
 mais cela générais des erreur dans le push " fatal error " . Je vais régler ce problème d'ici le 
 prochain exercice.
 
+Références : Les 6 spirales du cours. En particulier les 3 premières.
+
 
