@@ -17,12 +17,7 @@ void main() {
   phone = query('#phone');
   
   btn_create = query('#btn_create');
-  // attach event handlers:
-  // checks for not empty in onBlur event:
-  
- // nom.onBlur.listen(notEmpty);
- // email.onBlur.listen(notEmpty);
- // phone.onBlur.listen(notEmpty);
+
     
   btn_create.onClick.listen(storeData);
 }

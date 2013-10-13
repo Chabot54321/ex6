@@ -63,17 +63,16 @@ testContacts(Contacts contacts) {
 });
    
      
-//    
-//    test('Add Project Not Unique', () {
-//      var projectCount = contacts.length;
-//      var contact1 = new Contact();
-//      expect(contact1, isNotNull);
-//      contact1.nom = 'Le petit nouveau';
-//      var added = contacts.add(contact1);
-//      expect(added, isFalse);
-//      contacts.display('Add Project Not Unique');
-//    });
-    
+  test('Add Contact Not Unique', () {
+    var contactCount = contacts.length;
+    var contact = new Contact();
+    expect(contact, isNotNull);
+    contact.nom = 'Joey Jojo';   
+    var added = contacts.add(contact);
+    expect(added, isFalse);
+    contacts.display('Add Contact Not Unique');
+  });
+  
     
     test('Find Project by Name', () {
       var searchName = 'Bob Parker';
@@ -83,63 +82,61 @@ testContacts(Contacts contacts) {
       contact.display('Find Project by Name');
     });
     
-//    
-//    test('Select Projects by email', () {
-//      var emailscontacts = contacts.select((w) => w.onEmail);
-//      expect(emailscontacts.isEmpty, isFalse);
-//      expect(emailscontacts.length, equals(0));
-//      emailscontacts.display('@');
-//    });
+    
+    test('Select Contacts by Email', () {
+    var emailscontacts = contacts.select((c) => c.onEmail);
+    expect(emailscontacts.isEmpty, isFalse);
+    expect(emailscontacts.length, equals(3));
+    emailscontacts.display('Select Contacts by Email');
+  });
+
 //    
     
-//    
-//    test('Select Projects by email then Add', () {
-//      var emailscontacts = contacts.select((p) => p.onEmail);
-//      expect(emailscontacts.isEmpty, isFalse);
-//
-//      var dartlingTesting = 'jojothegreat@gmail.com';
-//      var emailscontact = new Contact();
-//      emailscontact.nom = dartlingTesting;
-//      emailscontact.email = 'jojothegreat@gmail.com';
-//      emailscontact.phone = '418-555-5555';
-//      
-//      var added = emailscontacts.add(emailscontacts);
-//      expect(added, isTrue);
-//      emailscontacts.display('Select Projects by email then Add');
-//
-//      var project = contacts.find(dartlingTesting);
-//      expect(project, isNull);
-//            contacts.display('Projects');
-//    });
-//    
+    test('Select Contacts by Email then Add', () {
+      var emailscontacts = contacts.select((c) => c.onEmail);
+      expect(emailscontacts.isEmpty, isFalse);
+
+      var testemail = 'Joey Jojo2';
+      var emailcontact = new Contact();
+      emailcontact.nom = testemail;
+      emailcontact.email = 'jojothegreat2@gmail.com';
+      emailcontact.phone = '418-911-9112';
+      
+      var added = emailscontacts.add(emailcontact);
+      expect(added, isTrue);
+      emailscontacts.display('Select Contacts by Email then Add');
+
+      var contact = contacts.find(testemail);
+      expect(contact, isNull);
+      contacts.display('Contacts');
+    });   
     
     
-//    
-//    test('Select Projects by email then Remove', () {
-//      var projectCount = contacts.length;
-//      contacts.display('Projects Before Remove');
-//      var programmingProjects = contacts.select((p) => p.onEmail);
-//      expect(programmingProjects.isEmpty, isFalse);
-//
-//      var searchName = 'Joey Jojo';
-//      var contact = programmingProjects.find(searchName);
-//      expect(contact, isNotNull);
-//      expect(contact.nom, equals(searchName));
-//      var programmingProjectCount = programmingProjects.length;
-//      programmingProjects.remove(contact);
-//      expect(programmingProjects.length, equals(--programmingProjectCount));
-//      expect(contacts.length, equals(projectCount));
-//    });
-//    
-//    
-//    
-//    test('Order Projects by Name', () {
-//      contacts.orderByFunction((m,n) => m.compareTo(n));
-//      contacts.display('Order Contacts by Name');
-//    });
-////    
-//    
-//    
+    
+    test('Select Contacts by email then Remove', () {
+      var contactCount = contacts.length;
+      contacts.display('Contacts Before Remove');
+      var EmailContacts = contacts.select((c) => c.onEmail);
+      expect(EmailContacts.isEmpty, isFalse);
+
+      var searchName = 'Joey Jojo';
+      var contact = EmailContacts.find(searchName);
+      expect(contact, isNotNull);
+      expect(contact.nom, equals(searchName));
+      var EmailContactCount = EmailContacts.length;
+      EmailContacts.remove(contact);
+      expect(EmailContacts.length, equals(--EmailContactCount));
+      expect(contacts.length, equals(contactCount));
+    });  
+    
+    
+    
+    test('Order Contacts by Name', () {
+      contacts.orderByFunction((m,n) => m.compareTo(n));
+      contacts.display('Order Contacts by Name');
+    });  
+    
+    
     test('New Contact', () {
       var projectCount = contacts.length;
       var contact4 = new Contact();
@@ -158,26 +155,23 @@ testContacts(Contacts contacts) {
     
     
     
-//   test('Copy contacts', () {
-//      Contacts copiedContactss = contacts.copy();
-//      expect(copiedContactss.isEmpty, isFalse);
-//      expect(copiedContactss.length, equals(contacts.length));
-//      expect(copiedContactss, isNot(same(contacts)));
-//      expect(copiedContactss, isNot(equals(contacts)));
-//      copiedContactss.forEach((cp) =>
-//          expect(cp, isNot(same(contacts.find(cp.name)))));
-//      copiedContactss.display('Copied contacts');
-//      contacts.display('Projects');
-//    });
+    test('Copy Contacts', () {
+      Contacts copiedContacts = contacts.copy();
+      expect(copiedContacts.isEmpty, isFalse);
+      expect(copiedContacts.length, equals(contacts.length));
+      expect(copiedContacts, isNot(same(contacts)));
+      expect(copiedContacts, isNot(equals(contacts)));
+      copiedContacts.forEach((cp) =>
+          expect(cp, isNot(same(contacts.find(cp.nom)))));
+      copiedContacts.display('Copied Contacts');
+     //projects.display('Projects');
+    });
     
     
-    
-    
-//    test('True for Every Project', () {
-//      expect(contacts.every((p) => p.code != null), isTrue);
-//      expect(contacts.every((p) => p.name != null), isTrue);
-//    });
-//
+    test('True for Every Contact', () {
+      expect(contacts.every((p) => p.code != null), isTrue);
+      expect(contacts.every((p) => p.nom != null), isTrue);
+    });
 //   
    
       test('From Projects to JSON', () {
