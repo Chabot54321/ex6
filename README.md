@@ -15,6 +15,6 @@ prochain exercice.
 
 RÃ©fÃ©rences : Les 6 spirales du cours. En particulier les 3 premiÃ¨res.
 
-Merci à Bechir Sellami pour m'avoir montré comment afficher les trois contacts existant dans le début
-de la fenêtre. 
+Merci Ã  Bechir Sellami pour m'avoir montrï¿½ comment afficher les trois contacts existant dans le dï¿½but
+de la fenÃ¨tre. 
 
