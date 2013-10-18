@@ -3,43 +3,39 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Contacts de l'ex6</title>
-      <link rel="stylesheet" href="ex6.css">
+    <title>Exo 6</title>
+    <link rel="stylesheet" href="ex6.css">
   </head>
   <body>
-    <header><h1>Contacts de l'ex6</h1></header>
-    <section><strong>Creer un contact</strong></section>
-    <form name="contact" autocomplete>
-      <table class="auto-style1">
-          <tr>
-              <td class="auto-style2"><strong>contact</strong></td>
-              <td>&nbsp;</td>
-          </tr>
-          <tr>
-              <td class="auto-style2">nom</td>
-              <td><input id="nom" type="text" required autofocus /></td>
-          </tr>
-          <tr>
-              <td class="auto-style2">phone</td>
-              <td><input id="phone" type="text"/></td>
-          </tr>
-          <tr>
-              <td class="auto-style2">email</td>
-              <td>
-                  <input id="email" type="email" required/></td>
-          </tr>
+    
+    <table id="table"></table>
+    <label id="label1"></label>
+    <form name="contactform" autocomplete>
+    
+      
+      <div>
+        <h1>Rajout de contact :</h1>
+        <label>
+        <span>Name :</span><input id="name" type="text" name="name1" class="input1"/>
+        </label>       
+        
+        <label>
+        <span>Email :</span><input id="email" type="email" class="input1"/>
+        </label>
+        
+        <label>
+        <span>Phone number :</span><input id="phone" type="tel" class="input1" pattern="\d\d\d-\d\d\d-\d\d\d\d"/>
+        </label>
+             
+        
+        <button type="button" id="bouton_add" class="btns">Add</button>     
+        <button type="button" id="bouton_save" class="btns">Save</button>
+        
           
-          
-          
-           <tr>
-              <td>
-                  <button value="" id="btn_create" class="btns">Ajouter le contact</button>
-              </td>
-           </tr>
-      </table>
-      </form>
-
-     <script type="application/dart" src="ex6.dart"></script>
+      </div>
+    </form>
+    
+    <script type="application/dart" src="ex6.dart"></script>
     <script src="packages/browser/dart.js"></script>
   </body>
 </html>

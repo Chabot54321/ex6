@@ -39,13 +39,7 @@ h1, p {
   width: 155px;
 }
 
-#address {
-  width: 250px;
-}
 
-#birth_date {
-  width: 83px;
-}
 
 #gender {
   width: 50px;
@@ -62,6 +56,5 @@ input {
 
 :required {
   border-color: #1be032;
-  -webkit-box-shadow:
-    0 0 5px rgba(57, 237, 78, .5);
+
 }

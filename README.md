@@ -1,7 +1,7 @@
 ex6
 ===
 
-exercice 6, cr√©ation d'un questionnaire pour des contacts
+##exercice 6, cr√©ation d'un questionnaire pour des contacts
 
 
 Thomas Chabot
@@ -15,4 +15,6 @@ prochain exercice.
 
 R√©f√©rences : Les 6 spirales du cours. En particulier les 3 premi√®res.
 
+Merci ‡ Bechir Sellami pour m'avoir montrÈ comment afficher les trois contacts existant dans le dÈbut
+de la fenÍtre. 
 
