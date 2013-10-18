@@ -5,16 +5,16 @@ ex6
 
 
 Thomas Chabot
-908186611
+dossier : 908186611
 
 
 Message : J'ai mis le git.ignore, mais il a tout de même installé 
 les packages dans GitHub. Je dois m'y prendre de la mauvaise manière. J'ai tenté de recommancé,
-mais cela générais des erreur dans le push " fatal error " . Je vais régler ce problème d'ici le 
+mais cela générait des erreur dans le push " fatal error " . Je vais régler ce problème d'ici le 
 prochain exercice.
 
 Références : Les 6 spirales du cours. En particulier les 3 premières.
 
-##Merci à Bechir Sellami pour m'avoir montré comment afficher les trois contacts existant dans le début
+#Merci à Bechir Sellami pour m'avoir montré comment afficher les trois contacts existant dans le début
 de la fenètre. 
 
