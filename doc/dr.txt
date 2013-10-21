@@ -1,0 +1,25 @@
+ex06
+
+7/10
+
+(-1) packages @GitHub
+
+(-1)
+modele 2x (lib et model) ?
+
+(-1)
+class fiche
+->
+class Fiche
+Add_contact
+->
+addContact
+voir https://www.dartlang.org/articles/style-guide/
+
+  Person(nom, email, phone) {
+    this.nom = nom;
+    this.email = email;
+    this.phone = phone;
+      }
+->
+  Person(this.nom, this.email, this.phone);
